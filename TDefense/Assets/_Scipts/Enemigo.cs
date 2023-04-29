@@ -9,6 +9,11 @@ public class Enemigo : MonoBehaviour
     public int vida = 70;
 
     public Animator Anim;
+
+    private void OnEnable()
+    {
+        objetivo = GameObject.Find("Objetivo");
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +39,7 @@ public class Enemigo : MonoBehaviour
 
     public void Danar()
     {
-        objetivo?.GetComponent<Objetivo>().RecibirDano(20);
+        objetivo?.GetComponent<Objetivo>().RecibirDano(5);
     }
 
     public void RecibirDano(int dano = 5)
