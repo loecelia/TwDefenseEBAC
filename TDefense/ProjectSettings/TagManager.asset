@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Objetivo
   - Plataforma
+  - Enemigo
+  - Bala
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Proyectil
   - 
   - 
   - 
